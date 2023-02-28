@@ -12,6 +12,7 @@ function App() {
     <div className="App">
       <h1>Horoscopes</h1>
       < Cards />
+      {console.log(data)}
     </div>
   );
 }
