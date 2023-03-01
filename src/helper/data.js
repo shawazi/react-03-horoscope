@@ -65,7 +65,7 @@ export const data = [
     title: "Scorpio",
     date:"(October 23 - November 21)",
     desc:
-      "Elusive and mysterious, Scorpio is one of the most misunderstood signs of the zodiac. Scorpio is a water sign that uses emotional energy as fuel, cultivating powerful wisdom through both the physical and unseen realms. In fact, Scorpio derives its extraordinary courage from its psychic abilities, which is what makes this sign one of the most complicated, dynamic signs of the zodiac",
+      "Elusive and mysterious, Scorpio is one of the most misunderstood signs of the zodiac. Scorpio is a water sign that uses emotional energy as fuel, cultivating powerful wisdom through both the physical and unseen realms. In fact, Scorpio derives its extraordinary courage from its psychic abilities, which is what makes this sign one of the most complicated, dynamic signs of the zodiac.",
     image: "https://drscdn.500px.org/photo/1058508757/q%3D80_m%3D2000_k%3D1/v2?sig=e7d24d769ebb5f03ae9ccd24ce3493a1e014fffc9515f5430284ca5d5f425435",
   },
   {
@@ -73,7 +73,7 @@ export const data = [
     title: "Sagittarius",
     date:"(November 22 - December 21)",
     desc:
-      "Oh, the places Sagittarius goes! But… actually. This fire sign knows no bounds. Represented by the archer, Sagittarians are always on a quest for knowledge. The last fire sign of the zodiac, Sagittarius launches its many pursuits like blazing arrows, chasing after geographical,.",
+      "Oh, the places Sagittarius goes! But… actually. This fire sign knows no bounds. Represented by the archer, Sagittarians are always on a quest for knowledge. The last fire sign of the zodiac, Sagittarius launches its many pursuits like blazing arrows, chasing after geographical, intellectual, and spiritual adventures.",
     image:
       "https://drscdn.500px.org/photo/245435019/q%3D80_m%3D2000/v2?sig=5d261f85136e73aa35e51640738d6d25b4f997078e27055b7972780466e5c0dd",
   },
