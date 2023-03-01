@@ -1,36 +1,36 @@
-import React from "react";
+import React, { useState } from "react";
 import { data } from "../helper/data";
 
-const handleClick = (e) => {
-    e.preventDefault();
-    console.log("you clicked a card");
-    const Flip = () => {
-        return (
-            <div className="container">
-            {data.map((item, id) => (
-                <div onClick={handleClick} className="card" key={id}>
-                    <h3>{item.title}</h3>
-                    <div>
-                        <p className="show">{item.desc} </p>
-                    </div>
-                </div>
-            ))}
-        </div>
-        )
-    Flip();
-    }
-  }
-
 const Cards = () => {
+    const [display, setDisplay] = useState(
+        data.map((item) => ({isDisplayed: false }))
+    );
+
+    const handleClick = id => {
+        console.log("clicked")
+        setDisplay((prev) =>
+            prev.map((status, index) => 
+                index === id ? { isDisplayed: !status.isDisplayed } : status
+            )
+        )
+    };
+
     return (
         <div className="container">
             {data.map((item, id) => (
-                <div onClick={handleClick} className="card" key={id}>
+                <div className="card" onClick={() => handleClick(id)} key={id}>
                     <h3>{item.title}</h3>
                     <p>Birthdays: {item.date}</p>
+                    {display[id].isDisplayed && (
                     <div>
-                        <p className="hide">{item.desc} </p>
+                    <p className="show">{item.desc}</p>
                     </div>
+                    )}
+                    {!display[id].isDisplayed && (
+                    <div>
+                    <p className="hide">{item.desc}</p>
+                    </div>
+                    )}
                     <img className="small-img" src={item.image} alt="Zodiac Symbol"></img>
                 </div>
             ))}
