@@ -3,7 +3,7 @@ import { data } from "../helper/data";
 
 const Cards = () => {
     const [display, setDisplay] = useState(
-        data.map((item) => ({isDisplayed: false }))
+        data.map(() => ({isDisplayed: false }))
     );
 
     const handleClick = id => {
